@@ -41,7 +41,7 @@ Pbest = Pop;
 fitnessPbest = Fitness;
 %% 
 for i = 1:Maxgen
-    disp(['---------µÚ' num2str(i) 'ÂÖ---------']);
+    disp(['---------The  ' num2str(i) '  Iteration---------']);
     %% 
     for j = 1:PopSize
         V(j,:) = W*V(j,:)+C1*rand*(Pbest(j,:)-Pop(j,:))+ C2*rand*(Gbest-Pop(j,:));
