@@ -1,5 +1,5 @@
 function [y,p_o,q_ol,q_ou] = IT2GFHS(u,yd,K,D,S,et,epnum)
-%% 获得参数
+%% 
 k11 = K(1);
 k12 = K(2);
 k21 = K(3);
@@ -14,7 +14,7 @@ d31 = D(5);
 d32 = D(6);
 s_l = S(1);
 s_u = S(2);
-%% 获得参数
+%% 
 p  = 0;
 s = size(u);
 q_lower = zeros(1,6);
@@ -28,7 +28,7 @@ M = [0 0 0 0 0 0 0 0 0 0 0 0 0]';
 V = [0 0 0 0 0 0 0 0 0 0 0 0 0]';
 beta1 = 0.9;
 beta2 = 0.999999;
-%% 训练
+%% 
 Y_IT2GFHS  =  zeros(s(1,1),1);
 e_IT2GFHS  =  zeros(s(1,1),1);
 for epoch  =  1:epnum
